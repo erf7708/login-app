@@ -39,10 +39,13 @@ const LoginForm = () => {
         username,
         password,
       });
-
-      alert(`ورود موفقیت‌آمیز: ${response.data.message || "خوش آمدید!"}`);
+      if(response?.data?.result){
+        alert(`ورود موفقیت‌آمیز بود خوش آمدید!`);
+      }
     } catch (error) {
-      alert(`خطا: ${error.response?.data?.message || "مشکلی پیش آمده است"}`);
+      if(error.response?.data?.result == false){
+        alert(`ورود با شکست مواجحه شد!`);
+      }
     }
   };
 
