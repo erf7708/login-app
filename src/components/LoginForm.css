@@ -93,6 +93,13 @@ body {
   margin: 5px 0;
 }
 
+.dark-mode .brand-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  margin: 5px 0;
+}
+
 .website {
   font-size: 1rem;
   color: #1e90ff;
@@ -100,7 +107,7 @@ body {
 }
 
 .card {
-  background-color: #ffffff;
+  background-color: rgb(236, 236, 236);
   padding: 30px;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -118,6 +125,12 @@ body {
 
 .welcome-text {
   color: #555;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+.dark-mode .welcome-text {
+  color: #fff;
   margin-bottom: 20px;
   font-size: 1.1rem;
 }
@@ -309,3 +322,7 @@ button:hover {
     line-height: 0;
   }
   
+
+  .dark-mode label {
+    color: #fff;
+  }
